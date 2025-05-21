@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link href="https://fonts.cdnfonts.com/css/ibm-plex-sans" rel="stylesheet">
+                
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Course Registration Form</h1>
+    <form action="">
+            <fieldset>
+                <legend>Personal details</legend>
+                <table>
+                    <tr>
+                        <td><label>First Name</label></td>
+                        <td><input type="text" placeholder="Ex : Mukesh" name="FN" size="15" required> <span>Enter your name</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><label>Surname</label></td>
+                        <td><input type="text" placeholder="EX : Basappagari" name="LN" size="15" optional> <span>Enter your Surname</span></td>
+                    </tr>
+                    <tr>
+                        <td><label >Mobile Number</label></td>
+                        <td><input type="tel" placeholder="EX : 964-046-3625" name="mob" size="15" minlength="10" required> <span>Enter your Number</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td><input type="email" name="mail" placeholder="EX : Mukesh@gmail.com" size="15" required> 
+                            <img src="image/correct.png" alt="Correct Image" id="valid">
+                            <img src="image/wrong.png" alt="wrong Image" id="invalid">
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Password</label></td>
+                        <td><input type="password" name="pwd" placeholder="min 8 Character" min="8" size="15" required> <span>Enter Your password</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirm Password</label></td>
+                        <td><input type="password" name="cpwd" placeholder="min 8 Character" size="15" required> <span>Confirm Password</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>DOB</label></td>
+                        <td><input type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>AGE</label></td>
+                        <td><input type="number" style="width: 50px;" min="17" max="100" required><span>Enter your age</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td><input type="radio" name="gender"><label>Male</label>
+                        <input type="radio" name="gender"><label>FeMale</label>
+                        <input type="radio" name="gender"><label>Others</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>Select Country</label></td>
+                        <td>
+                            <select>
+                                <option>INDIA</option>
+                                <option>USA</option>
+                                <option>CHINA</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Upload Picture</label></td>
+                        <td><input type="file"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" title="Reset the Information"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Course Details</legend>
+                <table>
+                    <tr>
+                        <td>Select Course</td>
+                    </tr>
+                    <tr>
+                        <td><select>
+                            <option>Java Full Stack</option>
+                            <option>python Full Stack</option>
+                            <option>MERN Stack</option>
+                            <option>MEAN Stack</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label>Delivery Mode</label></td>
+                        <td><input type="radio" name="mode"><label>Online</label>
+                        <input type="radio" name="mode"><label>Offline</label></td>
+                    </tr>
+                    <tr>
+                        <td><label>INSTITUTE NAME</label></td>
+                        <td><input type="text" placeholder="TAP ACADEMY" readonly id="IN"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Comments</label></td>
+                        <td><textarea></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit"></input>
+    </form> 
+
+</body>
+</html>

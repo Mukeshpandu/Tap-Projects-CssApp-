@@ -1,0 +1,141 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+h1:hover{
+    background: #22C1C3;
+        background: linear-gradient(0deg, rgb(9, 65, 221) 50%, rgb(209, 149, 21) 50%);
+    background-clip: text;
+    color: transparent;
+
+}
+
+body{
+    background: #1699cc;
+    background: linear-gradient(90deg, rgba(22, 153, 204, 1) 0%,
+          rgba(87, 199, 133, 1) 19%, rgba(112, 179, 20, 1) 38%,
+          rgba(237, 221, 83, 1) 54%, rgba(22, 153, 204, 1) 71%,
+          rgba(22, 199, 96, 1) 88%, rgba(237, 221, 83, 1) 96%);
+    color: white;
+}
+
+fieldset{
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 30px;
+}
+
+fieldset:hover{
+    border-radius: 50px;
+}
+
+input[type = "submit"]{
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: yellow;
+    color: red;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+input[type = "reset"]{
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+input:required{
+    border: 2px solid red;
+}
+
+input:optional{
+    border: 2px solid green;
+}
+
+input:read-only{
+    border: 2px solid rgb(198,252,3);
+    background-color: rgb(3, 252, 98);
+    color: black;
+}
+
+#IN{
+    border: 2px solid greenyellow;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+}
+
+input[type = "radio"]:checked{ 
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio"]:checked + label{
+    color: black;
+}
+
+input:hover{
+    border-radius: 20px;
+
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+input[type = "file"]:hover{
+    cursor: pointer;
+}
+
+input[type = "radio"]:hover{
+    cursor: pointer;
+}
+
+select{
+    border-radius: 20px;
+    padding: 3px;
+    color: white;
+    background-color: rgb(124, 36, 240);
+}
+
+input:focus{
+    background-color: yellow;
+    color: rgb(253, 9, 155);
+}
+
+input + span{
+    display: none;
+}
+
+input:hover + span{
+    display: inline;
+}
+
+img{
+    display: none;
+    
+}
+input[type = "email"]:focus:valid ~ img#valid{
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+
+input[type = "email"]:focus:invalid ~ img#invalid{
+    display: inline;
+    height: 15px;
+    width: 15px;
+}
+ 
+
